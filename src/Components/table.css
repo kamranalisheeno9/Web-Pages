@@ -1,0 +1,78 @@
+.url-table-header {
+    background: #d2d2d2;
+    border-bottom: 4px solid #630384;
+}
+
+.header-green {
+    color: #17822C;
+}
+
+.header-red {
+    color: rgb(223, 1, 1);
+    user-select: none;
+}
+
+.header-red-update {
+    color: rgb(223, 1, 1);
+    user-select: none;
+    cursor: pointer;
+}
+
+.header-blue {
+    color: #0169BC;
+    user-select: none;
+}
+
+.url-header-name {
+    text-align: right;
+    margin: 2% 5%;
+    color: #0169BC;
+}
+
+.app-header-name {
+    text-align: right;
+    margin: 2% 5%;
+    color: #0169BC;
+}
+
+.header-blue-remove {
+    color: #0169BC;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header-blue-update {
+    color: #0169BC;
+    cursor: pointer;
+    user-select: none;
+}
+
+.url-table thead, .application-table thead {
+    text-align: center;
+}
+
+.application-table tbody {
+    text-align: right;
+}
+
+.t-row td {
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.url-table {
+    text-align: right;
+}
+
+.application-table {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:580px) {
+    .application-table {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+}

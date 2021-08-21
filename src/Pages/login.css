@@ -1,0 +1,120 @@
+/* LOGIN */
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.btn-pages {
+    text-decoration: none;
+    color: #0169BC;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.btn-login {
+    background-color: transparent !important;
+    border: 2px solid #0169BC;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.btn-pages:hover {
+    color: #085da3;
+}
+
+.banner-img {
+    background-size: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.header-welcome {
+    color: #0169BC;
+    font-weight: bolder;
+}
+
+.login-content {
+    margin-right: 5%;
+    float: right !important;
+}
+
+.login-content input {
+    width: 300px;
+    border: none;
+    border-bottom: 3px solid #0169BC;
+}
+
+.login-content input {
+    outline: none;
+    border-bottom: 3px solid #0169BC;
+}
+
+.login-content span {
+    color: #0169BC;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:990px) {
+    .header-welcome {
+        font-size: 38px;
+    }
+    .login-content {
+        margin-top: 30px;
+    }
+    .login-content input {
+        width: 200px;
+    }
+    .login-content span {
+        font-size: 17px;
+    }
+    .btn-pages {
+        font-size: 20px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:732px) {
+    .header-welcome {
+        font-size: 32px;
+    }
+    .login-content {
+        margin-top: 30px;
+    }
+    .login-content input {
+        width: 170px;
+    }
+    .login-content span {
+        font-size: 15px;
+    }
+    .btn-pages {
+        font-size: 16px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:432px) {
+    .header-welcome {
+        font-size: 26px;
+    }
+    .login-content {
+        margin-top: 20px;
+    }
+    .login-content input {
+        width: 120px;
+    }
+    .login-content span {
+        font-size: 14px;
+    }
+    .btn-pages {
+        font-size: 14px;
+        padding: 0px;
+    }
+}

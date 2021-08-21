@@ -1,0 +1,111 @@
+
+
+.Web-page-header {
+    color: #0169BC;
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.web-page-container {
+    width: 100%;
+}
+
+.web-page-inner-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-application, .btn-url {
+    width: 180px;
+    background-color: transparent !important;
+    border: 3px solid #0169BC;
+    border-radius: 10px;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    color: #0169BC;
+    font-weight: 600;
+}
+.btn-application:focus,.btn-url:focus{
+    box-shadow: none !important;
+
+
+}
+.btn-application:active,.btn-url:active{
+    box-shadow: none !important;
+    color: #00437a;
+    border: 3px solid #00437a;
+
+
+}
+.buttons {
+    margin-left: 30%;
+}
+
+.btn-application:hover, .btn-url:hover {
+    color: #004d8b !important;
+}
+
+.btn-application:focus, .btn-url:focus {
+    color: #004d8b;
+}
+
+.search-line {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.search-line input {
+    width: 50%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0169BC;
+    font-size: 18px;
+}
+
+.search-line p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width:992px) {
+    .Web-page-header {
+        font-size: 20px;
+    }
+    .buttons {
+        margin-left: 25%;
+    }
+    .btn-application, .btn-url {
+        width: 170px;
+        margin: 10px 20px;
+    }
+    .search-line input {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .Web-page-header {
+        margin-left: 20%;
+        font-size: 18px;
+    }
+    .buttons {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width:566px) {
+    .buttons {
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width:444px) {
+    .Web-page-header {
+        font-size: 17px;
+    }
+    .buttons {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
