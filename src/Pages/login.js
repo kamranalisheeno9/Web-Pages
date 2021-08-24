@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import { Button, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import OtherPages from './otherpages'
 import LogoImg from '../Images/image.png'
 import BannerImg from '../Images/bg1.JPG'
 import Products from '../Components/products'
