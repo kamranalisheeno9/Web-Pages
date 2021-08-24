@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './webpage.css'
-import { Container, Form, Button } from 'react-bootstrap';
-
+import { Container, Button } from 'react-bootstrap';
+import LogoImg from '../Images/image.png'
+import BannerImg from '../Images/bg.JPG'
 const Webpage = () => {
     const [search, setSearch] = useState("")
     const SearchFunc = (e) => {
@@ -9,6 +10,13 @@ const Webpage = () => {
     }
     return (
         <Container className="web-page-container">
+              <div className="logo">
+                    <img src={LogoImg}></img>
+                </div>
+                <Container className="banner-img">
+                    <img src={BannerImg}></img>
+                </Container>
+                <p className="definition-username">definition for username </p>
             <div className="web-page-inner-container">
                 <h4 className="Web-page-header">personal App/ web page management</h4>
                 <div className="buttons">

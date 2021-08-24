@@ -7,6 +7,14 @@ import Level3 from '../Images/r3.png'
 import Level4 from '../Images/r4.png'
 import Level5 from '../Images/r5.png'
 import Level6 from '../Images/r6.png'
+import LogoImg from '../Images/image.png'
+import BannerImg from '../Images/bg.JPG'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 const Levels = () => {
     const [level1, setLevel1] = useState(false)
     const [level2, setLevel2] = useState(false)
@@ -29,10 +37,10 @@ const Levels = () => {
 
 
     const images = [
-        { id: 6, src: Level6, title: 'image-6', toggle: level6, description: "Level 6 Description Here Level 6 Description Here Level 6 Description Here" },
-        { id: 5, src: Level5, title: 'image-5', toggle: level5, description: "Level 5 Description Here Level 5 Description Here Level 5 Description Here" },
+        { id: 6, src: Level6, title: 'image-6', toggle: level6, description: "Level  6 Description Here Level 6 Description Here" },
+        { id: 5, src: Level5, title: 'image-5', toggle: level5, description: "Level 5 Description Here" },
         { id: 4, src: Level4, title: 'image-4', toggle: level4, description: "Level 4 Description Here Level 4 Description Here Level 4 Description Here" },
-        { id: 3, src: Level3, title: 'image-3', toggle: level3, description: "Level 3 Description Here Level 3 Description Here Level 3 Description Here" },
+        { id: 3, src: Level3, title: 'image-3', toggle: level3, description: "Level  Description Here Level 3 Description Here" },
         { id: 2, src: Level2, title: 'image-2', toggle: level2, description: "Level 2 Description Here Level 2 Description Here Level 2 Description Here" },
         { id: 1, src: Level1, title: 'image-1', toggle: level1, description: "Level 1 Description Here Level 1 Description Here Level 1 Description Here" },
 
@@ -100,30 +108,62 @@ const Levels = () => {
 
     return (
         <Container className="levels-container" >
+
+            <div className="logo">
+                <img src={LogoImg}></img>
+            </div>
+            <Container className="banner-img">
+                <img src={BannerImg}></img>
+            </Container>
             <div className="level-container" >
 
                 <p className="definition-username">definition for username </p>
 
                 {/* LEVELS */}
 
-                <Container >
-                    <ul>
+                <Container className="images-level-container">
 
-                        {images.map((image) => {
-                            return (
-                                <>
-                                    <li className="images-list-levels" key={image.id}>
 
-                                        <img onClick={() => ImageToggle(image.id)} className={image.toggle ? "level-image-clicked" : "level-image"} src={image.src} />
-                                        <p className="level-description">{image.description}</p>
+                
+                <div className="img-des-container" >
+<div className="column">
 
-                                    </li>
-                                </>
+<img onClick={() => ImageToggle(images[0].id)} className={images[0].toggle ? "level-image-clicked" : "level-image"} src={images[0].src} />
+                    <p className="level-description">{images[0].description}</p>
+</div>
+<div className="column">
 
-                            )
-                        })}
-                    </ul>
+<img onClick={() => ImageToggle(images[1].id)} className={images[1].toggle ? "level-image-clicked" : "level-image"} src={images[1].src} />
+                    <p className="level-description">{images[1].description}</p>
+</div>
+<div className="column">
+
+<img onClick={() => ImageToggle(images[2].id)} className={images[2].toggle ? "level-image-clicked" : "level-image"} src={images[2].src} />
+                    <p className="level-description">{images[2].description}</p>
+</div>
+
+<div className="column">
+
+<img onClick={() => ImageToggle(images[3].id)} className={images[3].toggle ? "level-image-clicked" : "level-image"} src={images[3].src} />
+                    <p className="level-description">{images[3].description}</p>
+</div>
+<div>
+
+<img onClick={() => ImageToggle(images[4].id)} className={images[4].toggle ? "level-image-clicked" : "level-image"} src={images[4].src} />
+                    <p className="level-description">{images[4].description}</p>
+</div>
+<div className="column">
+
+<img onClick={() => ImageToggle(images[5].id)} className={images[5].toggle ? "level-image-clicked" : "level-image"} src={images[5].src} />
+                    <p className="level-description">{images[5].description}</p>
+</div>
+
+</div>
+
+
+                   
                 </Container>
+
 
                 {/* ADVANCED SETTING */}
 
@@ -192,7 +232,19 @@ const Levels = () => {
 
 
             </div>
+            <Container className="next-container">
 
+                <Link className="btn-working" to="/products">
+                    <Button className="btn-next">
+                        Previous
+                    </Button>
+                </Link>
+                <Link className="btn-working" to="/tables">
+                    <Button className="btn-previous">
+                        Next
+                    </Button>
+                </Link>
+            </Container>
         </Container>
     );
 }

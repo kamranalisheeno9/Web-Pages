@@ -192,6 +192,37 @@ select:focus{
     outline: none;
 }
 
+.btn-next,.btn-previous {
+    background-color: transparent !important;
+    border: 2px solid #0169BC;
+    border-radius: 10px !important;
+    width: 150px;
+    color: #0169BC;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+
+}
+
+
+
+.next-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-working button:hover {
+    color: #085da3 !important;
+}
+
+@media only screen and (max-width:768px) {
+    .btn-next, .btn-previous {
+        width: 110px !important;
+    }
+}
 @media only screen and (max-width:580px) {
     .btns {
         width: 100% !important;
@@ -206,5 +237,11 @@ select:focus{
     }
     .dropdown-level {
         margin-right: 1%;
+    }
+   
+}
+@media only screen and (max-width:332px) {
+    .next-container{
+        justify-content: center;
     }
 }

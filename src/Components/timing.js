@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { Container, Button, Form, InputGroup, FormControl } from 'react-bootstrap';
 import './timing.css'
 import { BiTime } from "react-icons/bi";
+import LogoImg from '../Images/image.png'
+import BannerImg from '../Images/bg.JPG'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 const Timing = () => {
 
 
@@ -75,6 +83,14 @@ const Timing = () => {
 
     return (
         <Container>
+            <div className="logo">
+                <img src={LogoImg}></img>
+            </div>
+            <Container className="banner-img">
+                <img src={BannerImg}></img>
+            </Container>
+            <p className="definition-username">definition for username </p>
+
             <h4 className="app-header-name">TIMING</h4>
             <div className="btns">
                 <div className="btn1">
@@ -163,6 +179,16 @@ const Timing = () => {
                         <p className={activetoggle1 ? "active-status" : "non-active-status"}>{active1} &nbsp; &nbsp;  <span className="status-name" >Period Timing Status</span></p>
                     </div>
                 </Form>
+            </Container>
+
+            <Container className="next-container">
+
+                <Link className="btn-working" to="/tables">
+                    <Button className="btn-next">
+                        Previous
+                    </Button>
+                </Link>
+            
             </Container>
         </Container>
     );

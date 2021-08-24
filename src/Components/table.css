@@ -69,10 +69,49 @@
     font-size: 18px;
 }
 
+
+.btn-next,.btn-previous {
+    background-color: transparent !important;
+    border: 2px solid #0169BC;
+    border-radius: 10px !important;
+    width: 150px;
+    color: #0169BC;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.next-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-working button:hover {
+    color: #085da3 !important;
+}
+
+@media only screen and (max-width:768px) {
+    .btn-next, .btn-previous {
+        width: 110px;
+    }
+    
+}
 @media only screen and (max-width:580px) {
     .application-table {
         width: 90%;
         margin: 10px auto;
         font-size: 16px;
+    }
+    
+}
+@media only screen and (max-width:332px) {
+    .next-container{
+        justify-content: center;
     }
 }

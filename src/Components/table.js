@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Container, Table, Button } from 'react-bootstrap';
 import './table.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 const Tables = () => {
 
     const [urlDataHeader, setUrlDataHeader] = useState(
@@ -194,6 +200,19 @@ const Tables = () => {
 
                     </tbody>
                 </Table>
+                <Container className="next-container">
+
+                    <Link className="btn-working" to="/levels">
+                        <Button className="btn-next">
+                            Previous
+                        </Button>
+                    </Link>
+                    <Link className="btn-working" to="/timing">
+                        <Button className="btn-previous">
+                            Next
+                        </Button>
+                    </Link>
+                </Container>
             </Container>
         </>
     );
